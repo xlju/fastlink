@@ -1,0 +1,25 @@
+server:
+  port: 8889
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: repeater
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+  profiles:
+    active: dev
+
+  mvc:   #静态文件
+    static-path-pattern : /static/**
+  #模板引擎
+  thymeleaf:
+    model: HTML5
+    prefix: classpath:/templates/
+    suffix: .html
+    #指定编码
+    encoding: utf-8
+    #禁用缓存 默认false
+    cache: false

@@ -1,2 +1,0 @@
-# quicklink
-quicklink

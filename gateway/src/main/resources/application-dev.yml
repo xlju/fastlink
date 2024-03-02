@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: repeater
+          uri: lb://repeater
+          predicates:
+            - Path=/**
+
+
+

@@ -1,0 +1,14 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: admin
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+  profiles:
+    active: dev
+
+
+
