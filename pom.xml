@@ -3,9 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.xilio</groupId>
-    <artifactId>quicklinker</artifactId>
+    <artifactId>fastlink</artifactId>
     <version>1.0.0</version>
-    <name>quicklinker</name>
+    <name>fastlink</name>
     <packaging>pom</packaging>
     <dependencies>
         <dependency>
@@ -18,10 +18,10 @@
         </dependency>
     </dependencies>
     <modules>
-        <module>gateway</module>
-        <module>repeater</module>
-        <module>framework</module>
-        <module>admin</module>
+        <module>fl-gateway</module>
+        <module>fl-repeater</module>
+        <module>fl-framework</module>
+        <module>fl-admin</module>
     </modules>
 
     <properties>
@@ -75,7 +75,7 @@
             </dependency>
             <dependency>
                 <groupId>cn.xilio</groupId>
-                <artifactId>framework</artifactId>
+                <artifactId>fl-framework</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
